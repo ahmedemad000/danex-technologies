@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Danex Technologies</title>
+    <script type="text/javascript">
+      // Single page app support for GitHub Pages
+      const pathSegments = window.location.pathname.split('/');
+      const repoName = 'danex-technologies';
+      const isRepoPage = pathSegments[1] === repoName;
+      
+      if (isRepoPage && pathSegments.length > 2) {
+        const redirectPath = pathSegments.slice(2).join('/');
+        window.location.href = `/${repoName}/#/${redirectPath}`;
+      } else {
+        window.location.href = `/${repoName}/`;
+      }
+    </script>
+  </head>
+  <body>
+    <noscript>
+      <p>Please enable JavaScript to view this page.</p>
+    </noscript>
+  </body>
+</html>

@@ -9,7 +9,6 @@ const quickLinks = [
   { path: '/', label: 'Home' },
   { path: '/services', label: 'Services' },
   { path: '/case-studies', label: 'Case Studies' },
-  { path: '/careers', label: 'Careers' }, // Add this line
   { path: '/contact', label: 'Contact' },
 ];
 
